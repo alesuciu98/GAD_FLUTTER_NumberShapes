@@ -157,10 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 validator: (String value) {
-                  if (value.contains('.') ||
-                      value.contains(',') ||
-                      value.contains('-') ||
-                      value.contains(' ')) {
+                  if (value.contains('.') || value.contains(',') || value.contains('-') || value.contains(' ')) {
                     return 'Please Enter an Integer!';
                   }
                   return null;
